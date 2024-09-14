@@ -10,124 +10,166 @@
     <link rel="stylesheet" href="src/stylesheets/ColorPallete.css">
     <link rel="stylesheet" href="src/stylesheets/Typography.css">
     <link rel="stylesheet" href="src/stylesheets/NavBar.css">
+    <link rel="stylesheet" href="src/stylesheets/Footer.css">
     <link rel="stylesheet" href="src/stylesheets/Homepage.css">
 </head>
 <body>
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary NavbarStyle">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
         <div class="container-fluid">
             <!--Logo y Titulo de la Aplicacion-->
-            <div class="row LogoSection">
-                <div class="col LogoEmpresa">
-                    <img src="./src/img/LogoEmpresa.png"/>
-                </div>
-                <div class="col TituloEmpresa">
-                    <h4>Cyber Academy</h4>
-                </div>
-            </div>
+            <a class="navbar-brand px-5 text-center" href="index.html">
+                <img src="./src/img/LogoAplicacion.png" width="30" height="30"
+                    class="d-inline-block pb-1" />
+                Cyber Academy
+            </a>
             <!--Boton Dropdown Navigation Bar-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Botones de Redireccion de la Navigation Bar-->
-            <div class="collapse navbar-collapse" id="navbarNav"></div>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">¿Quienes Somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactenos</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="container-fluid">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="src/pages/AboutPage.html">¿Quienes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="src/pages/ContactPage.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-
-    <!--Pagina 1 del Homepage-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
-                <div>
-                    <h1>
+    <main>
+        <!--Pagina 1 del Homepage-->
+        <div class="container-fluid px-5 py-5" id="Jumbotron">
+            <div class="row">
+                <div class="col-md-6 col">
+                    <h3 class="text-light">
                         Este es un slogan representativo de <span class="CyberAcademy">Cyber Academy</span>
-                    </h1>
+                    </h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3">
+                            <h5 class="text-light text-center">Aprende</h5>
+                            <img src="src/img/IconGraduation.png" width="60" class="mx-auto d-block"/>
+                        </div>
+                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3">
+                            <h5 class="text-light text-center">Experimenta</h5>
+                            <img src="src/img/IconPlan.png" width="60" class="mx-auto d-block"/>
+                        </div>
+                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3">
+                            <h5 class="text-light text-center">Diviertete</h5>
+                            <img src="src/img/IconGraduation.png" width="60" class="mx-auto d-block"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm Enfoque">
-                        Aprende
-                        <img src="./src/img/IconGraduation.png"/>
-                    </div>
-                    <div class="col-sm Enfoque">
-                        Experimenta
-                        <img src="./src/img/IconPlan.png"/>
-                    </div>
-                    <div class="col-sm Enfoque">
-                        Algo más
-                        <img src="./src/img/IconGraduation.png"/>
-                    </div>
+                <div class="col-md-6 col">
+                    <img height="200px" src="src/img/LogoAplicacion.png" class="mx-auto d-block"/>
                 </div>
-            </div>
-            <div class="col">
             </div>
         </div>
-    </div>
 
-    <!--Pagina 2 del Homepage-->
-    <div class="container-fluid">
-        <!--Seccion Superior-->
-        <div class="row">
-            <div class="col">
-                <h1>
-                    ¿Qué es <span class="CyberAcademy">Cyber Academy</span>?
-                </h1>
-                <div class="text-justify">
-                    Descripcion de la aplicación. There are many variations of passages of Lorem Ipsum available, but the majority have suffered Estudiantes in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                </div>
-            </div>
-            <div class="col">
-                <h1>
-                    ¿A quién está dirigido?
-                </h1>
-                <div class="row">
-                    <div class="col-sm text-justify">
+        <div class="container-fluid px-5 py-5">
+            <!--Seccion Superior-->
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h2>
+                        ¿Qué es <span class="CyberAcademy">Cyber Academy</span>?
+                    </h2>
+                    <h6 class="text-justify py-5">
                         Descripcion de la aplicación. There are many variations of passages of Lorem Ipsum available, but the majority have suffered Estudiantes in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                    </div>
-                    <div class="col-sm text-justify">
-                        Descripcion de la aplicación. There are many variations of passages of Lorem Ipsum available, but the majority have suffered Estudiantes in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                    </div>
+                    </h6>
+                </div>
+                <div class="col-12 col-md-8">
+                    <iframe height="450vh" width="100%" src="https://www.youtube.com/embed/34KwhuyjsUM?si=iK7lkSeEpmoDEImK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div>
-            <h1>
-                ¿Cómo surge <span class="CyberAcademy">Cyber Academy</span>?
-            </h1>
-            <div class="text-justify">
-                Descripcion de la aplicación. There are many variations of passages of Lorem Ipsum available, but the majority have suffered Estudiantes in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-            </div>
-        </div>
-    </div>
-
-    <!--Pagina 3 del Homepage-->
-    <div class="container-fluid">
-        <!--Seccion Superior-->
-        <div>
-            <h1>
-                ¿Quieres conocer más sobre <span class="CyberAcademy">Cyber Academy</span>?
-            </h1>
-            <div class="d-flex justify-content-center">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
     
+        <!--Pagina 2 del Homepage-->
+        <div class="container-fluid px-5 py-5 bg-gunmetal text-light">
+            <div class="row">
+                <div class="col-md col-12">
+                    <h3 class="text-center">
+                        ¿A quién está dirigido?
+                    </h3>
+                    <p class="text-justify py-5">
+                        Descripcion de la aplicación. There are many variations of passages of Lorem Ipsum available, but the majority have suffered Estudiantes in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                </div>
+                <div class="col-md col-12">
+                    <h3 class="text-center">
+                        ¿Cómo surge <span class="CyberAcademy">Cyber Academy</span>?
+                    </h3>
+                    <p class="text-justify py-5">
+                        Descripcion de la aplicación. There are many variations of passages of Lorem Ipsum available, but the majority have suffered Estudiantes in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                    </p>
+                </div>
+            </div>
 
+        </div>
+    
+        <!--Pagina 3 del Homepage-->
+    </main>
+    <footer class="container-fluid py-5" id="mainFooter">
+        <div class="row px-5">
+            <div class="col-6 col-md">
+                <h5 class="footerTitle">Enlaces</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <a class="link-light text-decoration-none" href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="link-light text-decoration-none" href="">¿Quienes somos?</a>
+                    </li>
+                    <li>
+                        <a class="link-light text-decoration-none" href="">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footerTitle">Contáctenos</h5>
+                <p class="text-light pt-1">
+                    Av. Vicuña Mackenna 3939
+                    San Joaquín, Región Metropolitana
+                    <br>
+                    <br>
+                    <b>Correo:</b> chibitech.dev@gmail.com
+                </p>
+            </div>
+            <div class="col-12 col-md">
+                <h5 class="footerTitle text-center">Redes Sociales</h5>
+                <ul class="d-flex list-unstyled justify-content-center py-4">
+                    <li class="ms-3">
+                        <a href=""><img src="src/img/IconInstagram.png" width="40"/></a>
+                    </li>
+                    <li class="ms-3">
+                        <a href=""><img src="src/img/IconYoutube.png" width="40"/></a>
+                    </li>
+                    <li class="ms-3">
+                        <a href=""><img src="src/img/IconLinkedIn.png" width="40"/></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md">
+                <img class="mx-auto d-block" width="100" src="src/img/IconFESW.png"/>
+                <br>
+                <img class="mx-auto d-block" width="300" src="src/img/IconUSM.png"/>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="d-flex border-top justify-content-end">
+                <p class="text-light">© 2024 Cyber Academy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
     <!--Scripts extra-->
     <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

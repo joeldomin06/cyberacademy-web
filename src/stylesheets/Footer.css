@@ -1,3 +1,6 @@
 #mainFooter {
     background-color: var(--color-eeri-black);
 }
+.footerTitle {
+    color: var(--color-white);
+}
