@@ -7,3 +7,13 @@
     --color-anti-flash-white: #F1F1F1;
     --color-white: #FFFFFF;
 }
+
+.bg-celestial-blue{
+    background-color: var(--color-celestial-blue);
+}
+.bg-gunmetal{
+    background-color: var(--color-gunmetal);
+}
+.bg-eeri-black{
+    background-color: var(--color-eeri-black);
+}
