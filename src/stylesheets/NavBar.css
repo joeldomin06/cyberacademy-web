@@ -39,7 +39,6 @@ nav * .TituloEmpresa h4 {
     text-align: center;
     vertical-align: middle;
     font-family: "Carrois Gothic SC";
-    color: black;
 
 }
 
@@ -86,4 +85,19 @@ nav * .Interactive_Button_Style:not(:hover) {
     transform: scale (0.8,0.8);
     opacity: 80%;
     color: var(--color-silver);
+}
+
+#mainNav {
+    background-color: var(--color-eeri-black);
+}
+
+.nav-item .nav-link{
+    color: var(--color-silver);
+}
+
+.nav-item.active .nav-link{
+    color: var(--color-white);
+}
+.navbar-brand {
+    color: var(--color-white);
 }
