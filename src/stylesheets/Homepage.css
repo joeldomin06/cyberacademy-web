@@ -1,0 +1,10 @@
+@import './ColorPallete.css';
+@import './Typography.css';
+
+.CyberAcademy {
+    color: var(--color-celestial-blue);
+}
+
+* .Enfoque {
+    background-color: var(--color-celestial-blue);
+}
