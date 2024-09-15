@@ -12,3 +12,31 @@
 #Jumbotron {
     background-color: var(--color-eeri-black);
 }
+#knight {
+    border: 10px solid transparent;
+}
+#youtube {
+    border: 5px solid var(--color-celestial-blue);
+}
+
+.custom-jumbotron {
+    height: 400px; /* Puedes ajustar la altura según lo necesites */
+    display: flex;
+    background: linear-gradient(to right, #007bff 45%, rgba(0, 123, 255, 0.5) 50%, transparent 55%), url('../img/knight1.jpg');
+    background-size: cover; /* Asegura que la imagen cubra su espacio */
+    background-position: right; /* Posiciona la imagen en la mitad derecha */
+}
+
+.text-content {
+    color: white;
+    padding: 50px;
+    width: 50%;
+    background-color: linear-gradient(to right, #007bff 45%, rgba(0, 123, 255, 0.5) 50%, transparent 55%); /* Color sólido en la mitad izquierda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron h1, .jumbotron p {
+    margin: 0;
+}

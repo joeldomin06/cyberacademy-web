@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="src/stylesheets/Footer.css">
     <link rel="stylesheet" href="src/stylesheets/Homepage.css">
 </head>
+
 <body>
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg" id="mainNav">
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
         <div class="container-fluid">
             <!--Logo y Titulo de la Aplicacion-->
             <a class="navbar-brand px-5 text-center link-light" href="index.html">
-                <img src="./src/img/LogoAplicacion.png" width="30" height="30"
-                    class="d-inline-block pb-1" />
+                <img src="./src/img/LogoAplicacion.png" width="30" height="30" class="d-inline-block pb-1" />
                 Cyber Academy
             </a>
             <!--Boton Dropdown Navigation Bar-->
@@ -47,36 +47,44 @@
         </div>
     </nav>
     <main>
+        <!--
+            <div class="jumbotron custom-jumbotron d-flex align-items-center">
+                <div class="text-content">
+                    <h1>Tu Título</h1>
+                    <p>Tu descripción o contenido.</p>
+                </div>
+            </div>
+            -->
         <!--Pagina 1 del Homepage-->
-        <div class="container-fluid px-5 py-5" id="Jumbotron">
+        <div class="container-fluid px-5 py-5 shadow-lg" id="Jumbotron">
             <div class="row">
                 <div class="col-md-6 col">
-                    <h3 class="text-light">
+                    <h3 class="text-light text-end">
                         Aprender de ciberseguridad con <span class="CyberAcademy">Cyber Academy</span>
                     </h3>
                     <br>
                     <div class="row">
-                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3">
-                            <h5 class="text-light text-center">Aprende</h5>
-                            <img src="src/img/IconGraduation.png" width="60" class="mx-auto d-block"/>
+                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3 shadow-lg">
+                            <h5 class="text-light text-center">Previene</h5>
+                            <img src="src/img/stop.png" width="60" class="mx-auto d-block" />
                         </div>
-                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3">
-                            <h5 class="text-light text-center">Experimenta</h5>
-                            <img src="src/img/IconPlan.png" width="60" class="mx-auto d-block"/>
+                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3 shadow-lg">
+                            <h5 class="text-light text-center">Detecta</h5>
+                            <img src="src/img/magnifying-glass.png" width="60" class="mx-auto d-block" />
                         </div>
-                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3">
-                            <h5 class="text-light text-center">Diviertete</h5>
-                            <img src="src/img/IconCelebration.png" width="60" class="mx-auto d-block"/>
+                        <div class="col-md bg-celestial-blue rounded mx-3 py-3 my-3 shadow-lg">
+                            <h5 class="text-light text-center">Analiza</h5>
+                            <img src="src/img/bar-chart.png" width="60" class="mx-auto d-block" />
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col">
-                    <img height="200px" src="src/img/LogoAplicacion.png" class="mx-auto d-block"/>
+                    <img height="300px" src="src/img/LogoAplicacion.png" class="mx-auto d-block" id="knight" />
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid px-5 py-5">
+        <div class="container-fluid px-5 py-5 shadow-lg bg-afw">
             <!--Seccion Superior-->
             <div class="row">
                 <div class="col-12 col-md-4">
@@ -84,15 +92,27 @@
                         ¿Qué es <span class="CyberAcademy">Cyber Academy</span>?
                     </h2>
                     <h6 class="text-justify py-5">
-                        <span class="CyberAcademy">Cyber Academy</span> es una Aplicación de escritorio en ciberseguridad con aprendizaje adaptativo y gamificación, dirigida a instituciones y estudiantes tecnológicos para desarrollar habilidades efectivas en prevención y respuesta a ciberataques. 
+                        <span class="CyberAcademy">Cyber Academy</span> es una Aplicación de escritorio sobre
+                        ciberseguridad con aprendizaje adaptativo y gamificación, dirigida a instituciones y estudiantes
+                        tecnológicos para desarrollar habilidades efectivas en prevención y respuesta a distintos tipos
+                        de ciberataques que se pueden encontrar en la actualidad. En esta aplicación aprenderan sobre
+                        aspectos teoricos y practicos sobre cada tipo de ataque, aprendieno sobre su impacto y como
+                        pueden enfrentarse a ellos.
                     </h6>
                 </div>
                 <div class="col-12 col-md-8">
-                    <iframe height="450vh" width="100%" src="https://www.youtube.com/embed/34KwhuyjsUM?si=iK7lkSeEpmoDEImK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="ratio ratio-16x9">
+                        <iframe height="450vh" width="100%"
+                            src="https://www.youtube.com/embed/34KwhuyjsUM?si=iK7lkSeEpmoDEImK" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="youtube">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    
+
         <!--Pagina 2 del Homepage-->
         <div class="container-fluid px-5 py-5 bg-gunmetal text-light">
             <div class="row">
@@ -101,11 +121,14 @@
                         ¿A quién está dirigido?
                     </h3>
                     <p class="text-justify py-5">
-                        La aplicación de <span class="CyberAcademy">Cyber Academy</span> esta  Dirigida a instituciones de educación superior y los 
-                        liceos técnicos-profesionales, así como a Estudiantes del área tecnológica, 
-                        permitiendo a los usuarios desarrollar y mejorar sus habilidades para 
-                        prevenir, detectar y responder ante ataques cibernéticos de manera ágil y 
-                        efectiva.
+                        La aplicación de <span class="CyberAcademy">Cyber Academy</span> está dirigida a instituciones
+                        de educación superior y liceos técnico-profesionales, así como a estudiantes del área
+                        tecnológica. Su objetivo es proporcionara los usuarios una plataforma que les permita
+                        desarrollar y mejorar sus habilidades para prevenir, detectar y responder de manera ágil y
+                        efectiva ante los crecientes desafíos de laciberseguridad. Con un enfoque práctico y
+                        actualizado, esta herramienta se adapta a las necesidades de formación en un entorno digital
+                        cada vez más vulnerable a ataques cibernéticos, ofreciendo a los usuarios una experiencia
+                        educativa que refuerza su capacidad para enfrentar amenazas reales en el ámbito tecnológico.
                     </p>
                 </div>
                 <div class="col-md col-12">
@@ -113,21 +136,24 @@
                         ¿Cómo surge <span class="CyberAcademy">Cyber Academy</span>?
                     </h3>
                     <p class="text-justify py-5">
-                        El mundo actual enfrenta una creciente amenaza de ciberataques que afectan a diversos sectores. 
-                        La falta de conocimiento generalizado sobre estas amenazas tecnológicas y la preparación 
-                        insuficiente para enfrentarlas representan un desafío significativo. Abordar este problema es crucial 
-                        y una forma efectiva de hacerlo es mediante la educación de los estudiantes, preparándolos desde 
-                        una edad temprana para enfrentar y mitigar estas amenazas. 
-                        <br/>
-                        Es ante esta situación que surge <span class="CyberAcademy">Cyber Academy</span> para ofrecer una formación completa, integral y actualizada en ciberseguridad, combinando 
-                        herramientas digitales accesibles con escenarios de ciberataques simulados, se reduce la barrera de 
+                        El mundo actual enfrenta una creciente amenaza de ciberataques que afectan a diversos sectores.
+                        La falta de conocimiento generalizado sobre estas amenazas tecnológicas y la preparación
+                        insuficiente para enfrentarlas representan un desafío significativo. Abordar este problema es
+                        crucial
+                        y una forma efectiva de hacerlo es mediante la educación de los estudiantes, preparándolos desde
+                        una edad temprana para enfrentar y mitigar estas amenazas.
+                        <br />
+                        Es ante esta situación que surge <span class="CyberAcademy">Cyber Academy</span> para ofrecer
+                        una formación completa, integral y actualizada en ciberseguridad, combinando
+                        herramientas digitales accesibles con escenarios de ciberataques simulados, se reduce la barrera
+                        de
                         entrada a la educación en ciberseguridad.
                     </p>
                 </div>
             </div>
 
         </div>
-    
+
         <!--Pagina 3 del Homepage-->
     </main>
     <footer class="container-fluid py-5" id="mainFooter">
@@ -160,20 +186,24 @@
                 <h5 class="footerTitle text-center">Redes Sociales</h5>
                 <ul class="d-flex list-unstyled justify-content-center py-4">
                     <li class="ms-3">
-                        <a href="https://www.instagram.com/chibi_tech/"><img src="src/img/IconInstagram.png" width="40"/></a>
+                        <a href="https://www.instagram.com/chibi_tech/"><img src="src/img/IconInstagram.png"
+                                width="40" /></a>
                     </li>
                     <li class="ms-3">
-                        <a href="https://www.youtube.com/@ChibiTech_dev"><img src="src/img/IconYoutube.png" width="40"/></a>
+                        <a href="https://www.youtube.com/@ChibiTech_dev"><img src="src/img/IconYoutube.png"
+                                width="40" /></a>
                     </li>
                     <li class="ms-3">
-                        <a href="https://www.linkedin.com/company/chibi-tech/posts/?feedView=all"><img src="src/img/IconLinkedIn.png" width="40"/></a>
+                        <a href="https://www.linkedin.com/company/chibi-tech/posts/?feedView=all"><img
+                                src="src/img/IconLinkedIn.png" width="40" /></a>
                     </li>
                 </ul>
             </div>
             <div class="col-12 col-md">
-                <img class="d-block" width="250" src="src/img/IconUSM.png"/>
+                <h5 class="text-light">Somos parte de</h5>
+                <img class="d-block" width="250" src="src/img/IconUSM.png" />
                 <br>
-                <img class="d-block" width="100" src="src/img/IconFESW.png"/>
+                <img class="d-block" width="100" src="src/img/IconFESW.png" />
             </div>
         </div>
         <div class="container mt-3">

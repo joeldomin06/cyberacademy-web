@@ -1,4 +1,5 @@
 /*Importacion de la Fuente 'Nanum Gothic'*/
+/*
 @font-face{
     font-family: "Nanum Gothic";
     src: 
@@ -8,8 +9,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 /*Importacion de la Fuente 'Carrois Gothic SC'*/
+/*
 @font-face{
     font-family: "Carrois Gothic SC";
     src: 
@@ -17,6 +19,8 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 /*Configuracion de la tipografia de los Encabezados*/
 

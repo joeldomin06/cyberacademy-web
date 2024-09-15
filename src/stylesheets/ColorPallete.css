@@ -17,3 +17,9 @@
 .bg-eeri-black{
     background-color: var(--color-eeri-black);
 }
+.bg-afw{
+    background-color: var(--color-anti-flash-white);
+}
+.text-celestial-blue{
+    color: var(--color-celestial-blue);
+}
