@@ -1,0 +1,44 @@
+@import './ColorPallete.css';
+@import './Typography.css';
+.CyberAcademy {
+    color: var(--color-celestial-blue);
+}
+
+* .Enfoque {
+    background-color: var(--color-celestial-blue);
+}
+#head {
+    background: linear-gradient(90deg, rgba(16,155,225,1) 0%, rgba(16,155,225,0.99) 30%, rgba(16,155,225,0.65) 100%), url('../img/AboutKnight.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 40vh;
+}
+#bluething {
+    background-color: var(--color-celestial-blue);
+    width: 50px;
+    height: 10px;
+}
+.circle-icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+.black-icon {
+    filter: brightness(0%);
+}
+#goals {
+    background: linear-gradient(180deg, var(--color-eeri-black) 50%, var(--color-white) 50%);
+}
+@media (max-width: 768px) {
+    #goals {
+        background: var(--color-eeri-black);
+    }
+    #head {
+        background: var(--color-celestial-blue);
+    }
+}

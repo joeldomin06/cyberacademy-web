@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="../stylesheets/Typography.css">
     <link rel="stylesheet" href="../stylesheets/NavBar.css">
     <link rel="stylesheet" href="../stylesheets/Footer.css">
+    <link rel="stylesheet" href="../stylesheets/About.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXC9M7MMTB"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-    
+
         gtag('config', 'G-FXC9M7MMTB');
     </script>
 </head>
@@ -39,7 +40,7 @@
             <!--Botones de Redireccion de la Navigation Bar-->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="container-fluid">
-                    <ul class="nav justify-content-end">
+                    <ul class="nav justify-content-end mx-3">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
                         </li>
@@ -55,95 +56,145 @@
         </div>
     </nav>
     <main>
-        <div class="container-fluid px-5 py-5 bg-celestial-blue text-light">
-            <div class="row">
-                <div class="col-md-2 col-12">
-                    <img src="../img/new_chibi_tech.png" width="150" />
+        <div class="container-fluid px-5 py-5" id="head">
+            <div class="row justify-content-center h-100">
+                <div class="col-md-6 d-flex align-items-center">
+                    <h2 class="text-light">¿Quiénes somos?</h2>
                 </div>
-                <div class="col-md-10 col-12 mr-5">
-                    <h2>Chibi Tech</h2>
-                    <h5 class="pt-1 text-justify">Chibitech es un equipo compuestos estudiantes de la universidad
-                        federico santa maria comprometidos a entregar
-                        alternativas innovadoras para educar y desarrollar las capacidad tecnologicas nacionales. </h5>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row column-gap-5 row-gap-5 justify-content-center">
+                <div class="col-12 col-md-5">
+                    <h3>Sobre nosotros</h3>
+                    <div id="bluething"></div>
+                    <p class="mt-5">Somos un equipo de estudiantes apasionados por la ciberseguridad, comprometidos en
+                        compartir nuestro conocimiento y habilidades. Nuestra misión es empoderar a jóvenes a través de
+                        la educación en ciberseguridad, proporcionándoles herramientas prácticas y recursos que les
+                        permitan entender mejor los riesgos digitales y protegerse en el entorno online.</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="d-flex bg-silver rounded justify-content-center align-items-center py-5">
+                        <img src="../img/new_chibi_tech.png" width="400" />
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-around p-5 bg-afw">
-            <div class="row">
-                <div class="col-md col-12 bg-celestial-blue rounded p-2 mx-5">
-                    <h3 class="text-center text-light">Misión</h3>
-                    <img src="../img/IconMission.png" class="d-block mx-auto" width="80" />
-                    <p class="px-5 text-justify pt-1 text-light">Nuestra misión es ofrecer un entorno de aprendizaje en
-                        ciberseguridad para instituciones de educación superior, liceos técnicos y estudiantes
-                        tecnológicos, mediante una aplicación de escritorio con aprendizaje adaptativo y gamificación.
-                        Buscamos desarrollar competencias prácticas para prevenir, detectar y responder a ciberataques
-                        de forma ágil, accesible y motivadora.</p>
+        <div class="container-fluid" id="goals">
+            <h3 class="text-light text-center py-3 fw-bolder">Metas</h3>
+            <div class="row justify-content-around column-gap-5 row-gap-5 my-4">
+                <div class="col-12 col-md-4 bg-gunmetal rounded position-relative">
+                    <div class="circle-icon">
+                        <img src="../img/IconMission.png" class="black-icon" width="60" />
+                    </div>
+                    <h4 class="text-light text-center fw-bold mt-5">Misión</h4>
+                    <p class="text-light my-2 mx-3">
+                        Nuestra misión es formar a la próxima generación en ciberseguridad, promoviendo un entorno
+                        digital seguro y responsable, donde los jóvenes estén preparados para afrontar los retos
+                        tecnológicos del futuro.
+                    </p>
+                    <br>
                 </div>
-                <div class="col-md col-12 bg-celestial-blue rounded p-2 mx-5">
-                    <h3 class="text-center text-light">Visión</h3>
-                    <img src="../img/IconVision.png" class="d-block mx-auto" width="80" />
-                    <p class="px-5 text-justify pt-1 text-light">Nuestra visión es ser un referente en la educación en
-                        ciberseguridad, formando profesionales altamente capacitados para enfrentar los desafíos
-                        futuros. Aspiramos a establecer un estándar de excelencia educativa mediante tecnología
-                        innovadora, gamificación y aprendizaje adaptativo.</p>
+                <div class="col-12 col-md-4 bg-gunmetal rounded position-relative">
+                    <div class="circle-icon">
+                        <img src="../img/IconVision.png" class="black-icon" width="60" />
+                    </div>
+                    <h4 class="text-light text-center fw-bold mt-5">Visión</h4>
+                    <p class="text-light my-2 mx-3">
+                        Aspiramos a ser una comunidad de referencia en la educación en ciberseguridad, donde cada joven
+                        tenga acceso a conocimientos y habilidades que les permitan navegar el mundo digital con
+                        confianza y responsabilidad.
+                    </p>
+                    <br>
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-gunmetal px-5 pb-5 pt-3 text-light">
+        <div class="container-fluid bg-eeri-black px-5 pb-5 pt-3 text-light">
+            <h4 class="text-light text-center my-5">Nuestro Equipo</h4>
             <div class="row">
                 <div class="col-lg-4 col-md-6 my-2">
                     <img src="../img/profiles/sebaM.png" width="300" class="d-block mx-auto" />
-                    <h4 class="text-center pt-1"><b>Sebastián Meneses</b><a
-                            href="https://cl.linkedin.com/in/sebasti%C3%A1n-andr%C3%A9s-meneses-martin"><img
-                                src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" /></a></h4>
+                    <a href="https://cl.linkedin.com/in/sebasti%C3%A1n-andr%C3%A9s-meneses-martin"
+                        class="link-underline link-underline-opacity-0">
+                        <h4 class="text-celestial-blue text-center pt-1"><b>Sebastián Meneses</b>
+                            <img src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" />
+                        </h4>
+                    </a>
                     <p class="text-center">Scrum Master</p>
                 </div>
                 <div class="col-lg-4 col-md-6 my-2">
                     <img src="../img/profiles/pabloE.png" width="300" class="d-block mx-auto" />
-                    <h4 class="text-center pt-1"><b>Pablo Estobar</b><a
-                            href="https://www.linkedin.com/in/pablo-estobar/"><img src="../img/IconLinkedIn.png"
-                                width="10" class="d-inline-block mx-2" /></a></h4>
+                    <a href="https://www.linkedin.com/in/pablo-estobar/"
+                        class="link-underline link-underline-opacity-0">
+                        <h4 class="text-celestial-blue text-center pt-1"><b>Pablo Estobar</b>
+                            <img src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" />
+                        </h4>
+                    </a>
                     <p class="text-center">Product Owner</p>
                 </div>
                 <div class="col-lg-4 col-md-6 my-2">
                     <img src="../img/profiles/bastianV.png" width="300" class="d-block mx-auto" />
-                    <h4 class="text-center pt-1"><b>Bastián Varas</b><a
-                            href="https://www.linkedin.com/in/bastian-varas"><img src="../img/IconLinkedIn.png"
-                                width="10" class="d-inline-block mx-2" /></a></h4>
+                    <a href="https://www.linkedin.com/in/bastian-varas" class="link-underline link-underline-opacity-0">
+                        <h4 class="text-celestial-blue text-center pt-1"><b>Bastián Varas</b>
+                            <img src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" />
+                        </h4>
+                    </a>
                     <p class="text-center">Encargado de Marketing</p>
                 </div>
                 <div class="col-lg-4 col-md-6 my-2">
                     <img src="../img/profiles/joelD.png" width="300" class="d-block mx-auto" />
-                    <h4 class="text-center pt-1"><b>Joel Domínguez</b><a
-                            href="https://www.linkedin.com/in/joeldominguezn/"><img src="../img/IconLinkedIn.png"
-                                width="10" class="d-inline-block mx-2" /></a></h4>
+                    <a href="https://www.linkedin.com/in/joeldominguezn/" class="link-underline link-underline-opacity-0">
+                        <h4 class="text-celestial-blue text-center pt-1"><b>Joel Domínguez</b>
+                            <img src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" />
+                        </h4>
+                    </a>
                     <p class="text-center">Full-Stack Developer</p>
                 </div>
                 <div class="col-lg-4 col-md-6 my-2">
                     <img src="../img/profiles/ivanO.png" width="300" class="d-block mx-auto" />
-                    <h4 class="text-center pt-1"><b>Iván Oyarzún</b><a
-                            href="https://cl.linkedin.com/in/ivan-oyarzun-rojas"><img src="../img/IconLinkedIn.png"
-                                width="10" class="d-inline-block mx-2" /></a></h4>
+                    <a href="https://cl.linkedin.com/in/ivan-oyarzun-rojas" class="link-underline link-underline-opacity-0">
+                        <h4 class="text-celestial-blue text-center pt-1"><b>Iván Oyarzún</b>
+                            <img src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" />
+                        </h4>
+                    </a>
                     <p class="text-center">UI/UX Designer</p>
                 </div>
                 <div class="col-lg-4 col-md-6 my-2">
                     <img src="../img/profiles/sebaN.png" width="300" class="d-block mx-auto" />
-                    <h4 class="text-center pt-1"><b>Sebastián Naranjo</b><a
-                            href="https://www.linkedin.com/in/sebastian-naranjo-henriquez/"><img
-                                src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" /></a></h4>
+                    <a href="https://www.linkedin.com/in/sebastian-naranjo-henriquez/" class="link-underline link-underline-opacity-0">
+                        <h4 class="text-celestial-blue text-center pt-1"><b>Sebastián Naranjo</b>
+                            <img src="../img/IconLinkedIn.png" width="10" class="d-inline-block mx-2" />
+                        </h4>
+                    </a>
                     <p class="text-center">Backend Developer</p>
                 </div>
             </div>
         </div>
     </main>
     <footer class="container-fluid py-5" id="mainFooter">
-        <div class="row px-5">
-            <div class="col-6 col-md">
+        <div class="row row-gap-2 px-2">
+            <div class="col-12 col-md">
+                <img src="../img/new_chibi_tech.png" width="60" />
+            </div>
+            <div class="col-12 col-md-3">
+                <h5 class="footerTitle fw-bold">Acerca de Cyber Academy</h5>
+                <p class="text-light">Software para el aprendizaje de ciberseguridad de forma interactiva y
+                    personalizada.</p>
+                <ul class="d-flex list-unstyled column-gap-2">
+                    <li>
+                        <a href="https://www.instagram.com/chibi_tech/"><img src="../img/IconInstagram.png"
+                                width="20" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/chibi-tech/posts/?feedView=all"><img
+                                src="../img/IconLinkedIn.png" width="20" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
                 <h5 class="footerTitle">Enlaces</h5>
                 <ul class="list-unstyled text-small">
-                    <li>
-                        <a class="link-light text-decoration-none" href="../../index.html">Inicio</a>
-                    </li>
                     <li>
                         <a class="link-light text-decoration-none" href="AboutPage.html">¿Quienes somos?</a>
                     </li>
@@ -152,38 +203,22 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-3">
                 <h5 class="footerTitle">Contáctenos</h5>
                 <p class="text-light pt-1">
                     Av. Vicuña Mackenna 3939
                     San Joaquín, Región Metropolitana
-                    <br>
-                    <br>
-                    <b>Mail:</b> chibitech.dev@gmail.com
                 </p>
+                <div class="d-flex align-items-center">
+                    <img src="../img/IconCorreo.png" width="20" />
+                    <p class="text-light mb-0 mx-2">chibitech.dev@gmail.com</p>
+                </div>
             </div>
-            <div class="col-12 col-md">
-                <h5 class="footerTitle text-center">Redes Sociales</h5>
-                <ul class="d-flex list-unstyled justify-content-center py-4">
-                    <li class="ms-3">
-                        <a href="https://www.instagram.com/chibi_tech/"><img src="../img/IconInstagram.png"
-                                width="40" /></a>
-                    </li>
-                    <li class="ms-3">
-                        <a href="https://www.youtube.com/@ChibiTech_dev"><img src="../img/IconYoutube.png"
-                                width="40" /></a>
-                    </li>
-                    <li class="ms-3">
-                        <a href="https://www.linkedin.com/company/chibi-tech/posts/?feedView=all"><img
-                                src="../img/IconLinkedIn.png" width="40" /></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md">
+            <div class="col-6 col-md-2">
                 <h5 class="text-light">Somos parte de</h5>
-                <img class="d-block" width="250" src="../img/IconUSM.png" />
+                <img class="d-block" width="150" src="../img/IconUSM.png" />
                 <br>
-                <img class="d-block" width="100" src="../img/IconFESW.png" />
+                <img class="d-block" width="50" src="../img/IconFESW.png" />
             </div>
         </div>
         <div class="container mt-3">

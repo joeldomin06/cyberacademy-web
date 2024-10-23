@@ -20,6 +20,9 @@
 .bg-afw{
     background-color: var(--color-anti-flash-white);
 }
+.bg-silver{
+    background-color: var(--color-silver);
+}
 .text-celestial-blue{
     color: var(--color-celestial-blue);
 }

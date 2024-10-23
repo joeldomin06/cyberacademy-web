@@ -8,15 +8,16 @@
 * .Enfoque {
     background-color: var(--color-celestial-blue);
 }
-
 #Jumbotron {
-    background-color: var(--color-eeri-black);
+    background: linear-gradient(90deg, rgba(23,25,30,1) 0%, rgba(23,25,30,0.99) 70%, rgba(23,25,30,0.85) 100%), url('../img/Knight_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
-#knight {
-    border: 10px solid transparent;
-}
-#youtube {
-    border: 5px solid var(--color-celestial-blue);
+@media (max-width: 768px) {
+    #Jumbotron {
+        background: var(--color-eeri-black);
+    }
 }
 
 .custom-jumbotron {

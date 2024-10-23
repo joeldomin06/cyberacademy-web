@@ -88,7 +88,7 @@ nav * .Interactive_Button_Style:not(:hover) {
 }
 
 #mainNav {
-    background-color: var(--color-eeri-black);
+    background-color: var(--color-gunmetal);
     color: var(--color-silver);
 }
 

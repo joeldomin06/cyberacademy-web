@@ -1,0 +1,19 @@
+@import './ColorPallete.css';
+@import './Typography.css';
+.CyberAcademy {
+    color: var(--color-celestial-blue);
+}
+
+* .Enfoque {
+    background-color: var(--color-celestial-blue);
+}
+#head {
+    background: linear-gradient(90deg, rgba(16,155,225,1) 0%, rgba(16,155,225,0.99) 30%, rgba(16,155,225,0.2) 100%), url('../img/PigeonBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+    #head {
+        background: var(--color-celestial-blue);
+    }
+}
